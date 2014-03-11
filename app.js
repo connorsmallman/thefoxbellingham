@@ -8,6 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var mongo = require('mongoskin');
+var db = mongo.db("mongodb://localhost:27017/nodetest2", {native_parser:true});
 
 var app = express();
 
@@ -25,12 +27,18 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
+app.get('/about', routes.about);
+app.get('/findus', routes.findus);
+app.get('/booking', routes.booking);
+app.get('/bellingham', routes.bellingham);
+app.get('/contact', routes.contact);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

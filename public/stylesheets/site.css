@@ -1,0 +1,195 @@
+html{
+	height: 100%;
+	min-height: 100%;
+}
+body{
+	height: 100%;
+	min-height: 100%;
+    color: #727272;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.7em;
+}
+#slider{
+
+}
+h1, h2 {
+    font-weight: lighter;
+}
+h2 {
+    color: #EC6841;
+    font-size: 42px;
+    letter-spacing: -2px;
+    line-height: inherit;
+    margin-top: 0;
+    text-align: center;
+}
+.brand{
+	text-align: center;
+	padding: 30px 0px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.nav{
+	position: relative;
+	width:100%;
+	height:60px;
+}
+
+.nav ul{
+	list-style: none;
+	margin: 0px;
+	padding:0px;
+	position: absolute;
+	left:50%;
+	margin-left: -300px;
+}
+
+.nav ul li{
+	display: inline-block;
+}
+
+.nav ul li a{
+	color:#5a5b5b;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	width: 100px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nav ul li a:hover{
+	background: none repeat scroll 0 0 #58453F;
+    color: #FFFFFF;
+    text-decoration: none;
+	cursor: pointer;
+}
+hr{
+	background: url("../images/divider.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    border: medium none;
+    height: 80px;
+}
+
+footer{
+	background: none repeat scroll 0 0 #58453F;
+    color: #FFFFFF;
+    padding-top:20px;
+    margin-top: 60px;
+}
+
+footer ul{
+	list-style: none;
+	margin-left:10px;
+}
+
+footer ul li a{
+	color:#fff;
+	cursor: pointer;
+}
+
+footer ul li a:hover{
+	color:#fff;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.subfooter {
+    background: none repeat scroll 0 0 #665048;
+    margin-top:20px;
+	height: 40px;
+	line-height: 40px;
+	padding:0px 20px;
+    color:rgba(255,255,255,0.7);
+}
+
+.subfooter p{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.subfooter a{
+	color:rgba(255,255,255,1);
+}
+
+.img-polaroid {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+}
+
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right:10px;
+	height:40px;
+	width: 40px;
+	background: #fff;
+}
+
+#toTop span{
+	height:40px;
+	width: 40px;
+	display: block;
+	color:#665048;
+	line-height: 40px;
+	text-align: center;
+	font-size: 24px;
+}
+
+#toTop span:hover{
+	opacity: 1;
+}
+
+.sub-header {
+    background: url("../images/bg-blur.jpg") no-repeat fixed top center rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #EEEEEE;
+    padding: 30px 0;
+}
+
+.sub-header h1 {
+    border-right: 1px solid #555555;
+    float: left;
+    letter-spacing: -2px;
+    margin-right: 40px;
+    padding-right: 40px;
+}
+
+.sub-header span {
+    display: inline-block;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.btn-primary {
+    background: linear-gradient(to bottom, #F9C667 0%, #F79621 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    text-shadow: none;
+    border-color: #F79621;
+}
+
+.btn-primary:hover {
+    background: none repeat scroll 0 0 #D35C3A;
+    border-color: #D35C3A;
+}
+
+.form-group .alert{
+	padding: 2px 6px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background:none;
+	height:50px;
+	top:50%;
+	margin-top: -25px;
+	width:50px;
+	background:#fff;
+	background-repeat: none;
+	margin:0px 10px;
+	text-align: center;
+	line-height: 50px;
+	color:#F9C667;
+	box-shadow: none;
+	text-shadow: none;
+	font-weight: 20px;
+}

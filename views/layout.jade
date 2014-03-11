@@ -1,7 +1,71 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic')
+		link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='stylesheets/font-awesome.min.css')
+		link(rel='stylesheet', href='stylesheets/font-alfresco.css')
+		link(rel='stylesheet', href='stylesheets/site.css')
+	body
+		.brand
+			a(href='index.html')
+				img(src='images/logo.png', alt='The Fox B&B')
+		.container
+			.nav
+				.row
+					.col-lg-12
+						ul
+							li
+								a(href='/') Home
+							li
+								a(href='/about') About
+							li 
+								a(href='/booking') Booking
+							li 
+								a(href='/findus') Find us
+							li 
+								a(href='/bellingham') Bellingham
+							li
+								a(href='/contact') Contact
+		#main
+			block content
+		footer
+			.container
+				.row
+					.col-lg-3
+						ul
+							li
+								small
+									a(href='/') Home
+							li
+								small
+									a(href='/about') About
+							li 
+								small
+									a(href='/booking') Booking
+							li 
+								small
+									a(href='/findus') Find us
+							li 
+								small
+									a(href='/bellingham') Bellingham
+							li
+								small
+									a(href='/contact') Contact
+					.col-lg-3
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18242.719131001857!2d-2.255799949999971!3d55.14233064999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487d95bcc2da59a1%3A0x3d0324090bb4adc0!2sBellingham!5e0!3m2!1sen!2suk!4v1394378743054", width="500", height="200", frameborder="0", style="border:0")
+					.col-lg-3
+						p Address
+			.subfooter.clearfix
+				.pull-left
+					p Designed and hosted by 
+						a(target="_blank", href="http://www.c-s-d.co.uk") CSD
+				.pull-right
+					p &copy; Copyiright 2014 - The Fox B&B Bellingham
+		script(type='text/javascript', src='javascripts/jquery-1.11.0-min.js')
+		script(type='text/javascript', src='javascripts/bootstrap.min.js')
+		script(type='text/javascript', src='javascripts/easing.js')
+		script(type='text/javascript', src='javascripts/jquery.ui.totop.min.js')
+		script(type='text/javascript', src='javascripts/site.js')

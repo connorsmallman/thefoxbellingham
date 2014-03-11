@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'al_frescoregular';
+    src: url('Fonts/laura_worthington_-_alfresco-webfont.eot');
+    src: url('Fonts/laura_worthington_-_alfresco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/laura_worthington_-_alfresco-webfont.woff') format('woff'),
+         url('Fonts/laura_worthington_-_alfresco-webfont.ttf') format('truetype'),
+         url('Fonts/laura_worthington_-_alfresco-webfont.svg#al_frescoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
