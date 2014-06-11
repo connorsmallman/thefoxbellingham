@@ -10,5 +10,8 @@
     "jade": "*",
     "mongodb": "*",
     "mongoskin": "*"
+  },
+  "devDependencies": {
+    "express-validator": "^2.1.0"
   }
 }

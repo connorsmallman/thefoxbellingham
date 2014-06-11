@@ -1,5 +1,43 @@
 extends layout
-
+block scripts
+	script(type="text/javascript" src="javascripts/findus.js")
 block content
-  h1= title
-  p Welcome to #{title}
+	.sub-header
+		.container
+			.row
+				.col-lg-10.col-lg-offset-1
+					h1
+						| Find Us
+					span
+						| Always ask for directions
+	br
+	br
+	.container
+		.row
+			.col-lg-6.col-lg-offset-3
+				.text-center
+					h2
+						| Get directions
+				br
+				form(action="http://maps.google.com/maps", method="get", target="_blank")
+					input(type="hidden", name="daddr", value="4 Tyne View, Bellingham, Hexham, Northumberland, NE48 2JP")
+					.form-group
+						label(class="control-label", for="saddr")
+							| Enter your location
+						.input-group
+							span.input-group-addon
+								i.fa.fa-map-marker
+							input(class="form-control", type="text", name="saddr")
+							span.input-group-btn
+								input(class="btn btn-primary", type="submit", value="Get directions")
+		.row
+			.col-lg-12
+				hr
+		.row
+			.col-lg-10.col-lg-offset-1
+				.text-center
+					h2
+						| Find us on the map
+					br
+					br
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18242.719131001857!2d-2.255799949999971!3d55.14233064999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487d95bcc2da59a1%3A0x3d0324090bb4adc0!2sBellingham!5e0!3m2!1sen!2suk!4v1394378743054", width="800", height="600", frameborder="0", style="border:0")

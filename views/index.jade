@@ -1,5 +1,85 @@
 extends layout
-
+block scripts
+	script(type="text/javascript" src="javascripts/home.js")
 block content
-  h1= title
-  p Welcome to #{title}
+		div(id="slider", class="carousel slide", data-ride="carousel")
+			ol.carousel-indicators
+				li(data-target="#slider", data-slide-to="0", class="active")
+				li(data-target="#slider", data-slide-to="0")
+				li(data-target="#slider", data-slide-to="0")
+				li(data-target="#slider", data-slide-to="0")
+			.carousel-inner
+				.item.active
+					img(src="images/slider-1.png")
+				.item
+					img(src="images/slider-2.png")
+				.item
+					img(src="images/slider-3.png")
+				.item
+					img(src="images/slider-4.png")
+			a(class="left carousel-control", href="#slider", data-slider="prev")
+				span(class="fa fa-caret-left")
+			a(class="right carousel-control", href="#slider", data-slider="next")
+				span(class="fa fa-caret-right")
+		.container
+			.row
+				.col-lg-12
+					h2(style="margin:30px 0px", class="text-center") A home from home
+			.row
+				.col-lg-10.col-lg-offset-1
+					p
+						| Nestled in the heart of Bellingham, in rural Northumberland, the Fox B&B provides guest with a home from home. Proprietor Doreen has created  light and airy accommodation , with a welcoming and friendly atmosphere, so that you can relax and enjoy the beautiful Northumberland countryside at your leisure.
+					p
+						| The Fox B&B was once the Fox & Hounds Hotel, which dates back to 1731.  The Fox & Hounds closed in 1997 and, as part of an extensive refurbishment, was split into four separate properties.  The Fox B&B, being one of these four properties, still retains the spacious rooms, high ceilings and original features of the 18th Century coaching hotel.
+					br
+			.row
+				.col-lg-10.col-lg-offset-1
+					.row
+						.col-lg-4
+							img(class="img-polaroid", alt="room", src="images/library.png", data-original="images/library.png", style="display: inline")
+							h4
+								| The library
+							.description 
+								| Located on the ground floor of the converted stone property, the library is an ideal family room with two single beds which once combined, can make a comfy king-size bed. The spacious room also offers a double sofa bed and tea and coffee making facilities. There are no en-suite facilities but a bathroom can be located on the same floor. 
+						
+						.col-lg-4
+							img(class="img-polaroid", alt="room", src="images/loft.png", data-original="images/master.png", style="display: inline")
+							h4
+								| The Loft
+							.description 
+								| Located on the second floor, this family room offers a comfortable double bed and also two additional singles beds which can be accommodated within the space if required. The room spans the entire loft area with recently refurbished beams and stonework which enhance the cosy atmosphere of the property. The room has no en-suite facilities but a bathroom is situated on the floor below.
+						
+						.col-lg-4
+							img(class="img-polaroid", alt="room", src="images/master.png", data-original="images/loft.png", style="display: inline")
+							h4
+								| The Master room
+							.description 
+								| Located on the first floor, the spacious double room offers a comfortable double bed with tea and coffee making facilities. There are no ensuite facilities but a bathroom can be located on the same floor.
+					br
+					.row
+						.col-lg-12
+							.row
+								.col-lg-4
+									img(class="img-polaroid", alt="room", src="images/kitchen.png", data-original="images/kitchen.png", style="display: inline")
+								.col-lg-4
+									img(class="img-polaroid", alt="room", src="images/living-room.png", data-original="images/living-room.png", style="display: inline")
+								.col-lg-4
+									img(class="img-polaroid", alt="room", src="images/bathroom.png", data-original="images/bathroom.png", style="display: inline")
+							h4
+								| The kitchen & Living Space
+							.description
+								| At the Fox B&B we like to think we are a home from home so in addition to all of our guest rooms we have a living room on the first floor, which  offers TV and WIFI facilities and cosy sofas so you can relax after a long day discovering the Northumberland countryside. 
+							br
+							.description
+								| Breakfast at the Fox B&B is a very informal affair and is served in the large family kitchen and dining space on the ground floor.  Here guests can enjoy a hearty breakfast of their choice and relax on the cosy sofa by the heat of the old kitchen Range.
+							br
+							.description
+								| Free WIFI is available throughout the property.
+			.row
+				.col-lg-12
+					hr
+			.row
+				.col-lg-12
+					p.text-center
+						a(href="/booking", class="btn btn-primary")
+							| Contact Doreen to book your stay

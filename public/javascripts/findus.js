@@ -1,0 +1,1 @@
+$('#findus').addClass('active');

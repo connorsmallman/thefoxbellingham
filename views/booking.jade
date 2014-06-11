@@ -1,5 +1,80 @@
 extends layout
-
+block styles
+	link(rel='stylesheet', href='stylesheets/datepicker.css')
+block scripts
+	script(type="text/javascript" src="javascripts/bootstrap-datepicker.js")
+	script(type="text/javascript" src="javascripts/booking.js")
 block content
-  h1= title
-  p Welcome to #{title}
+	.sub-header
+		.container
+			.row
+				.col-lg-10.col-lg-offset-1
+					h1
+						| Booking
+					span
+						| Please let us know when your thinking on staying
+	br
+	br
+	.container
+		.row
+			.col-lg-6.col-lg-offset-3
+				.form-horizontal
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| First Name:
+							.col-lg-8
+								input(id="forename", name="forename" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Last Name:
+							.col-lg-8
+								input(id="surname", name="surname" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Email Address:
+							.col-lg-8
+								input(id="email", name="emailAddress" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Number of Guests:
+							.col-lg-8
+								input(id="guests", name="guests" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Contact Telephone Number:
+							.col-lg-8
+								input(id="telephoneNumber", name="telephoneNumber", class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Preferred <br /> check-in dates:
+							.col-lg-8
+								.input-group
+									span(class="input-group-addon")
+										i.fa.fa-calendar
+									input(class="form-control" type="text" data-date-format="dd/mm/yy" id="datepicker")
+									span(class="input-group-btn")
+										button(class="btn btn-primary" type="button" id="checkInDates")
+											| Add
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Dates added:
+							.col-lg-8
+								textarea(id="dates", name="dates", class="form-control" rows="5")
+					.form-group
+						.row
+							label.control-label.col-lg-4
+								| Special requests:
+							.col-lg-8
+								textarea(id="requests", name="request" class="form-control", rows="3")
+					.form-group
+						button(id="submit" type="button" class="btn btn-primary pull-right")
+							| Submit
+
+				

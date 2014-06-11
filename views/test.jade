@@ -1,0 +1,26 @@
+extends layout
+block scripts
+	script(type="text/javascript" src="javascripts/test.js")
+block content
+	.sub-header
+		.container
+			.row
+				.col-lg-12
+					h1
+						| Test
+					span
+						| This is a test
+	.container
+		.row
+			.col-lg-12
+				.form-group
+					label.control-label
+						| name
+					input(class="form-control", id="name" name="name")
+				.form-group
+					label.control-label
+						| surname
+					input(class="form-control", id="surname" name="surname")
+				.form-group
+					button(class="btn btn-primary pull-right" id="submit")
+						| Submit

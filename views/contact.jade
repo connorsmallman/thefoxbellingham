@@ -1,5 +1,52 @@
 extends layout
-
+block scripts
+	script(type="text/javascript", src="javascripts/contact.js")
 block content
-  h1= title
-  p Welcome to #{title}
+	.sub-header
+		.container
+			.row
+				.col-lg-10.col-lg-offset-1
+					h1
+						| Contact us
+					span
+						| Get in touch
+	br
+	br
+	.container
+		.row
+			.col-lg-12
+				h4.text-center
+					| Please call us on <span style="color:#D35C3A"><i class="fa fa-phone-square"></i> 01434 220668</span> or fill in the from below
+		.row
+			.col-lg-12
+				hr
+		.row
+			.col-lg-6.col-lg-offset-3
+				.form-horizontal
+					.form-group
+						.row
+							label.control-label.col-lg-3
+								| First Name:
+							.col-lg-9
+								input(id="forename", name="forename" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-3
+								| Last Name:
+							.col-lg-9
+								input(id="surname", name="surname" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-3
+								| Email Address:
+							.col-lg-9
+								input(id="emailAddress", name="emailAddress" class="form-control", type="text")
+					.form-group
+						.row
+							label.control-label.col-lg-3
+								| Message:
+							.col-lg-9
+								textarea(id="message", name="message" class="form-control", rows="6")
+					.form-group
+						button(id="submit" type="button" class="btn btn-primary pull-right")
+							| Submit

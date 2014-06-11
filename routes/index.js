@@ -26,3 +26,7 @@ exports.bellingham = function(req, res){
 exports.contact = function(req, res){
   res.render('contact', { title: 'The Fox | Contact' });
 };
+
+exports.test = function(req, res){
+  res.render('test', { title: 'The Fox | Test' });
+};

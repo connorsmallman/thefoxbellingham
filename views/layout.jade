@@ -8,7 +8,11 @@ html
 		link(rel='stylesheet', href='stylesheets/font-awesome.min.css')
 		link(rel='stylesheet', href='stylesheets/font-alfresco.css')
 		link(rel='stylesheet', href='stylesheets/site.css')
+		block styles
 	body
+		.phone-number
+			i(class="fa fa-phone-square") 
+			|  01434 220668
 		.brand
 			a(href='index.html')
 				img(src='images/logo.png', alt='The Fox B&B')
@@ -18,23 +22,23 @@ html
 					.col-lg-12
 						ul
 							li
-								a(href='/') Home
+								a(href='/', id="home") Home
 							li
-								a(href='/about') About
+								a(href='/about', id="about") About
 							li 
-								a(href='/booking') Booking
+								a(href='/booking', id="booking") Booking
 							li 
-								a(href='/findus') Find us
+								a(href='/findus', id="findus") Find us
 							li 
-								a(href='/bellingham') Bellingham
+								a(href='/bellingham', id="bellingham") Bellingham
 							li
-								a(href='/contact') Contact
+								a(href='/contact', id="contact") Contact
 		#main
 			block content
 		footer
 			.container
 				.row
-					.col-lg-3
+					.col-lg-2
 						ul
 							li
 								small
@@ -54,10 +58,11 @@ html
 							li
 								small
 									a(href='/contact') Contact
-					.col-lg-3
-						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18242.719131001857!2d-2.255799949999971!3d55.14233064999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487d95bcc2da59a1%3A0x3d0324090bb4adc0!2sBellingham!5e0!3m2!1sen!2suk!4v1394378743054", width="500", height="200", frameborder="0", style="border:0")
-					.col-lg-3
-						p Address
+					.col-lg-8
+						iframe(src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2280.2621931521994!2d-2.2563182!3d55.143690400000004!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1401535707619", width="700", height="200", frameborder="0", style="border:0")
+					.col-lg-2
+						p
+							| 4 Tyne View <br /> Bellingham <br /> Hexham <br /> Northumberland <br /> NE48 2JP
 			.subfooter.clearfix
 				.pull-left
 					p Designed and hosted by 
@@ -69,3 +74,4 @@ html
 		script(type='text/javascript', src='javascripts/easing.js')
 		script(type='text/javascript', src='javascripts/jquery.ui.totop.min.js')
 		script(type='text/javascript', src='javascripts/site.js')
+		block scripts

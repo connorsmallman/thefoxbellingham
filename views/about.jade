@@ -1,5 +1,44 @@
 extends layout
-
+block scripts
+	script(type="text/javascript" src="javascripts/about.js")
 block content
-  h1= title
-  p Welcome to #{title}
+	.sub-header
+		.container
+			.row
+				.col-lg-10.col-lg-offset-1
+					h1
+						| About us
+					span
+						| Lets get acquainted
+	.container
+		.row
+			.col-lg-10.col-lg-offset-1
+				br
+				br
+				p
+					| Nestled in the heart of Bellingham, in rural Northumberland, the Fox B&B provides guest with a home from home. Proprietor Doreen has created  light and airy accommodation , with a welcoming and friendly atmosphere, so that you can relax and enjoy the beautiful Northumberland countryside at your leisure.
+				p
+					| The Fox B&B was once the Fox & Hounds Hotel, which dates back to 1731.  The Fox & Hounds closed in 1997 and, as part of an extensive refurbishment, was split into four separate properties.  The Fox B&B, being one of these four properties, still retains the spacious rooms, high ceilings and original features of the 18th Century coaching hotel.
+		.row
+			.col-lg-12
+				hr
+		.row
+			.col-lg-10.col-lg-offset-1
+				.row
+					.col-lg-4
+						a(href="/booking")
+							img(class="img-polaroid", alt="room", src="images/kitchen.png", data-original="images/master.png", style="display: inline")
+					.col-lg-4
+						a(href="/booking")
+							img(class="img-polaroid", alt="room", src="images/loft.png", data-original="images/master.png", style="display: inline")
+					.col-lg-4
+						a(href="/booking")
+							img(class="img-polaroid", alt="room", src="images/living-room.png", data-original="images/master.png", style="display: inline")
+		.row
+			.col-lg-12
+				hr
+		.row
+			.col-lg-12
+				p.text-center
+					a(href="/booking", class="btn btn-primary")
+						| Contact Doreen to book your stay

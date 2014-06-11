@@ -1,5 +1,82 @@
 extends layout
-
+block scripts
+	script(type="text/javascript" src="javascripts/bellingham.js")
 block content
-  h1= title
-  p Welcome to #{title}
+	.sub-header
+		.container
+			.row
+				.col-lg-10.col-lg-offset-1
+					h1
+						| Bellingham
+					span
+						| All about our little village
+	.container
+		br
+		br
+		.row
+			.col-lg-12
+				h2.text-center 
+					| The Area
+		br
+		.row
+			.col-lg-8.col-lg-offset-2
+				p
+					| Bellingham is set on the edge of the Northumberland National Park and is known as the gateway town to Kielder Water & Forest Park making it an ideal location to discover the many attractions Northumberland has to offer. 
+				p
+					| Situated on the Hareshaw burn junction with the River Tyne, the village is a famous stopping point on the Pennine Way trail and is popular with walkers and cyclists. It is home to the Grade-I listed St Cuthbert's Church and its own museum, The Heritage Centre which houses a range of exhibitions.
+				br
+				p   
+					| Bellingham is also a good base if you want to explore some of Northumberland's best-known attractions. It lies nine miles from Kielder Water & Forest Park and is only a dozen miles from Northumberland's own World Heritage Site, Hadrian's Wall. 
+				p
+					| Bellingham's proximity to the North Tyne River makes it popular with those who like the pursuit of fishing and also has an excellent 18-hole golf course with amazing views of the Northumberland countryside.
+		.row
+			.col-lg-12
+				hr
+		.row
+			.col-lg-8.col-lg-offset-2
+				h2
+					| Attractions
+				br
+				br
+			.row
+				.col-lg-10.col-lg-offset-1
+					.row
+						.col-lg-2
+							a(href="http://www.forestry.gov.uk/forestry/EnglandNorthumberlandKielderKielderKielderCastleForestParkCentre", target="_blank")
+								img(src="images/kielder-castle.png", alt="", class="img-polaroid")
+								p
+									strong
+										| Kielder Castle and Visitor Centre
+						.col-lg-2
+							a(href="http://www.alnwickcastle.com", target="_blank")
+								img(src="images/alnwick-castle.png", alt="", class="img-polaroid")
+								p
+									strong
+										| Alnwick castle 
+						.col-lg-2
+							a(href="http://www.alnwickgarden.com", target="_blank")
+								img(src="images/alnwick-gardens.png", alt="", class="img-polaroid")
+								p
+									strong
+										| Alnwick gardens
+						.col-lg-2
+							a(href="http://www.nationaltrust.org.uk/hadrians-wall", target="_blank")
+								img(src="images/Hadrains-Wall.png", alt="", class="img-polaroid")
+								p
+									strong
+										| Hadrians wall
+						.col-lg-2
+							a(href="http://www.visitkielder.com/", target="_blank")
+								img(src="images/Kielder-Water-Forest-Park.png", alt="", class="img-polaroid")
+								p
+									strong
+										| Kielder Water and Forest Park
+						.col-lg-2
+							a(href="http://kielderobservatory.org", target="_blank")
+								img(src="images/Kielder-observatory.png", alt="", class="img-polaroid")
+								p
+									strong
+										| Kielder Observatory
+		.row
+			.col-lg-12
+				hr

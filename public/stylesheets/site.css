@@ -11,7 +11,8 @@ body{
     line-height: 1.7em;
 }
 #slider{
-
+	width: 100%;
+	overflow: hidden;
 }
 h1, h2 {
     font-weight: lighter;
@@ -64,6 +65,9 @@ h2 {
     color: #FFFFFF;
     text-decoration: none;
 	cursor: pointer;
+}
+.nav ul li a.active{
+	color:#EC6841;
 }
 hr{
 	background: url("../images/divider.png") no-repeat scroll center center rgba(0, 0, 0, 0);
@@ -173,6 +177,34 @@ footer ul li a:hover{
     border-color: #D35C3A;
 }
 
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #EEEEEE;
+  border-color: #e8e8e8;
+}
+
+.alert-dismissable .close{
+	right:0px;
+	top:0px;
+}
+
+.alert-dismissable{
+	padding: 15px!important;
+}
+
 .form-group .alert{
 	padding: 2px 6px;
 }
@@ -192,4 +224,17 @@ footer ul li a:hover{
 	box-shadow: none;
 	text-shadow: none;
 	font-weight: 20px;
+}
+.err{
+	font-weight: bold;
+}
+
+.phone-number{
+	position: fixed;
+	right:14px;
+	top:10px;
+	font-size: 18px;
+	color:#D35C3A;
+	font-weight: bold;
+	z-index:1001;
 }
