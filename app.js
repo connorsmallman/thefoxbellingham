@@ -59,7 +59,7 @@ app.post('/booking', express.bodyParser(), function (req, res){
 	//Mail options
 	mailOpts = {
 		from: req.body.email, //grab form data from the request body object
-		to: 'icsmallman@gmail.com',
+		to: 'doreencoyle@btinternet.com',
 		subject: 'The Fox Bellingham (website booking form)',
 		generateTextFromHTML: true,
 		html: 'Name: '  + req.body.forename + '<br />' + 'Surname: ' + req.body.surname + '<br />' + 'Email: ' + req.body.email + '<br />' + 'Number of Guests: ' + req.body.guest + '<br />' + 'Telephone Number: ' + req.body.number  + '<br />' + 'Prefferred Dates: ' + req.body.dates + '<br />' + 'Special Requests: <br />' + req.body.requests
@@ -98,7 +98,7 @@ app.post('/contact', function (req, res) {
 	//Mail options
 	mailOpts = {
 		from: req.body.email, //grab form data from the request body object
-		to: 'icsmallman@gmail.com',
+		to: 'doreencoyle@btinternet.com',
 		subject: 'The Fox Bellingham (website contact form)',
 		generateTextFromHTML: true,
     	html:'<p>Name: ' + req.body.forename + '<br />' + 'Surname: ' + req.body.surname + '<br />' + 'Email: ' + req.body.email + '<br >' + 'Message: <br />' + req.body.message + '</p>'
